@@ -1,0 +1,54 @@
+/*  MAIN CONTAINER   */
+#mainBox{
+  width: 400px;
+  margin: left;
+  border: 1px solid #ddd;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+
+
+#input{
+  margin: 3px 3px 3px 3px;
+  width: 98%;
+  resize: vertical;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#output{
+  display: none;
+  resize: vertical;
+  margin: 3px 3px 3px 3px;
+  width: 98%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#sortABC{
+  display: none;
+}
+
+#sortByCt{
+  display: none;
+}
+
+
+.buttonA {
+  width: 100%;
+    background-color: #008CBA; /* Green */
+    color: white;
+
+    text-align: center;
+    font-size: 16px;
+}
+
+.buttonB {
+  width: 49%;
+    background-color: #008CBA; /* Green */
+    color: white;
+    text-align: center;
+}

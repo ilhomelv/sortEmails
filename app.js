@@ -75,23 +75,16 @@ function doRemoveInvalid(){
   removeDuplicates();
 }
 
-//removeDuplicateshere
+
+//removeDuplicateshere with Set method
+//Set method automatically removes all du[licates and returns unique values
 function removeDuplicates(){
-  var tempObj = {}, j =0;
-  //we re storing key-value pair into tempObj
-  //key must be unique, so each email will be saved as unique, if duplicate email found, email will be overwritten
-  //we do not care about values,as we dont need them
-  console.log(validEmails);
-  for(var i=0; i<validEmails.length; i++){
-    tempObj[validEmails[i]] = j; j++;
-  }
-  for(var key in tempObj) {
-      emailsNoDuplicates.push(key);
-  }
+  //passing our validEmails array to a Set method, so array converts to Set collection,
+  var setColl = new Set(validEmails);
+  emailsNoDuplicates = [...setColl]; //convert Set collection to an array with spread operator
   console.log(emailsNoDuplicates);
   showValidInvalidOutput();
 }
-
 
 function showValidInvalidOutput(){
   output.style.display = "block";
